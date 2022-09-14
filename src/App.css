@@ -21,6 +21,10 @@ html {
   border-bottom: 0;
 }
 
+input[type="checkbox"] {
+  margin: 20px;
+}
+
 p {
   margin: 0;
   padding: 20px;
