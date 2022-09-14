@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function ListItem(props){
+
   const [ isChecked, setIsChecked ] = useState(false)
 
   return(<div key={props.id} className='list-item'>
@@ -9,7 +10,7 @@ function ListItem(props){
       onChange={() => setIsChecked(!isChecked)}
       checked={isChecked}
       />
-    <p>{props.task}</p>
+    <p className={ isChecked && 'completed-task'}>{props.task}</p>
   </div>)
 }
 
